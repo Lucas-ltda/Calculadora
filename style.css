@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(to right, #233329, #41b883);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid-container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+   
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto)repeat(5, 100px) ;
+}
+
+ 
+ button{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid #111;
+    outline: none;
+    background-color: #111;
+    color: #eee;
+    height: 100px;
+    border: none;
+}
+button:hover {
+    background-color: #eee;
+    color: #111;
+  }
+
+.operator{
+    background: #41b88375;
+}
+
+.span-two{
+    grid-column: span 2;
+}
+
+.output{
+    grid-column: 1 / -1;
+    background: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    height: 100px;
+}
+.precious-operand{
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.5rem;
+}
+
+.current-operand{
+    color: white;
+    font-size: 2.5rem;
+}
